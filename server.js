@@ -8,10 +8,8 @@ const port = 3000;
 
 app.post('/', (req, res) => {
     const stressProcess = spawn('python3', ['stress_cpu.py']);
+    res.send('POST request received and processing...');
 
-    stressProcess.on('close', (code) => {
-        console.log(`Python process exited with code ${code}`);
-    });
 });
 
 app.get('/', (req, res) => {
