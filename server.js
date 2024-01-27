@@ -20,8 +20,3 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-<<<<<<< HEAD
-});
-=======
-});
->>>>>>> 9f85e658608282b004d097e3150e5ce4a1935578
